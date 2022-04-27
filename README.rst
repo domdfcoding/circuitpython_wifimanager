@@ -12,7 +12,7 @@ This library provides a similar interface to the Adafruit_ESP32SPI_ library's ``
 but to support boards with builtin WiFi using the ``wifi`` module [1]_.
 
 .. _Adafruit_ESP32SPI: https://github.com/adafruit/Adafruit_CircuitPython_ESP32SPI
-.. [1]: https://circuitpython.readthedocs.io/en/latest/shared-bindings/wifi/index.html
+.. [1] https://circuitpython.readthedocs.io/en/latest/shared-bindings/wifi/index.html
 
 .. start shields
 
