@@ -1,0 +1,2 @@
+adafruit-blinka>=6.15.0
+adafruit-circuitpython-requests>=1.10.2
