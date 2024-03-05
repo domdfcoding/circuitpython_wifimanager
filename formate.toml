@@ -32,7 +32,7 @@ use_parentheses = true
 remove_redundant_aliases = true
 default_section = "THIRDPARTY"
 known_third_party = [ "adafruit_blinka", "adafruit_circuitpython_requests",]
-known_first_party = "circuitpython_wifimanager"
+known_first_party = [ "circuitpython_wifimanager",]
 extra_standard_library = [
     "usb_hid",
     "network",
