@@ -11,13 +11,12 @@ requires-python = ">=3.4"
 keywords = [ "circuitpython", "esp32", "wifi",]
 dynamic = [ "classifiers", "dependencies",]
 
+[project.license]
+file = "LICENSE"
+
 [[project.authors]]
 name = "Dominic Davis-Foster"
 email = "dominic@davis-foster.co.uk"
-
-
-[project.license]
-file = "LICENSE"
 
 [project.urls]
 Homepage = "https://github.com/domdfcoding/circuitpython_wifimanager"
@@ -26,7 +25,7 @@ Homepage = "https://github.com/domdfcoding/circuitpython_wifimanager"
 
 [tool.whey]
 base-classifiers = []
-python-versions = [ "3.6",]
+python-versions = [ "3.8",]
 python-implementations = [ "CPython",]
 platforms = [ "Windows", "macOS", "Linux",]
 license-key = "MIT"
@@ -34,7 +33,7 @@ license-key = "MIT"
 [tool.importcheck]
 
 [tool.mypy]
-python_version = "3.6"
+python_version = "3.8"
 namespace_packages = true
 check_untyped_defs = true
 warn_unused_ignores = true
@@ -43,6 +42,16 @@ show_error_codes = true
 
 [tool.snippet-fmt]
 directives = [ "code-block",]
+
+[tool.snippet-fmt.languages.python]
+reformat = true
+
+[tool.snippet-fmt.languages.TOML]
+reformat = true
+
+[tool.snippet-fmt.languages.ini]
+
+[tool.snippet-fmt.languages.json]
 
 [tool.dep_checker]
 allowed_unused = [ "adafruit_blinka",]
@@ -56,13 +65,3 @@ order = 10
 [tool.dependency-dash."doc-source/requirements.txt"]
 order = 30
 include = false
-
-[tool.snippet-fmt.languages.python]
-reformat = true
-
-[tool.snippet-fmt.languages.TOML]
-reformat = true
-
-[tool.snippet-fmt.languages.ini]
-
-[tool.snippet-fmt.languages.json]
