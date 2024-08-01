@@ -51,7 +51,7 @@ import socketpool  # type: ignore[import]  # nodep (CircuitPython builtin)
 import ssl
 import struct
 import time
-from micropython import const  # type: ignore[import]  # nodep (CircuitPython builtin)
+from micropython import const  # nodep (CircuitPython builtin)
 from time import sleep
 
 # 3rd party
@@ -61,7 +61,7 @@ if False:  # TYPE_CHECKING
 	# stdlib
 	import wifi  # type: ignore[import]
 	from types import TracebackType
-	from typing import Any, Dict, Optional, Tuple, Type, Union
+	from typing import Any, Dict, NoReturn, Optional, Tuple, Type, Union
 
 __author__: str = "Dominic Davis-Foster"
 __copyright__: str = "2021 Dominic Davis-Foster"
@@ -127,7 +127,7 @@ class WiFiManager:
 
 	# pylint: enable=too-many-arguments
 
-	def reset(self):  # noqa: D102
+	def reset(self) -> "NoReturn":  # noqa: D102
 		raise NotImplementedError
 
 	def connect(self) -> None:
@@ -435,7 +435,7 @@ class WiFiManager:
 		if self._pool is not None:
 			self._pool.close()()
 
-	def __enter__(self):
+	def __enter__(self) -> "WiFiManager":
 		return self
 
 	def __exit__(
@@ -446,7 +446,7 @@ class WiFiManager:
 			) -> None:
 		self.deinit()
 
-	def get_ntp_time(self, tz_offset: int = 0, *, debug: bool = False):
+	def get_ntp_time(self, tz_offset: int = 0, *, debug: bool = False) -> None:
 		"""
 		Obtain the current time over NTP and set the internal RTC.
 		"""
