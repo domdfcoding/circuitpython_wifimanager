@@ -72,7 +72,7 @@ but to support boards with builtin WiFi using the ``wifi`` module [1]_.
 	:target: https://github.com/domdfcoding/circuitpython_wifimanager/commit/master
 	:alt: GitHub last commit
 
-.. |maintained| image:: https://img.shields.io/maintenance/yes/2024
+.. |maintained| image:: https://img.shields.io/maintenance/yes/2025
 	:alt: Maintenance
 
 .. end shields
