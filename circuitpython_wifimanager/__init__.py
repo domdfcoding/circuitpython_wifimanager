@@ -166,7 +166,7 @@ class WiFiManager:
 			return access_point
 		if isinstance(self.ssid, (tuple, list)) or isinstance(self.password, (tuple, list)):
 			raise NotImplementedError(
-					"If using multiple passwords, both SSID and Password should be lists or tuples"
+					"If using multiple passwords, both SSID and Password should be lists or tuples",
 					)
 		return self.ssid, self.password
 
