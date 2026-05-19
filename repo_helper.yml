@@ -15,12 +15,20 @@ enable_docs: false
 use_whey: true
 on_pypi: false
 
+python_deploy_version: 3.9
+
 keywords:
  - wifi
  - esp32
  - circuitpython
 
 requires_python: 3.4
+
+python_versions:
+  3.4:
+    platforms:
+  3.9:
+  "3.10":
 
 exclude_files:
  - pkginfo

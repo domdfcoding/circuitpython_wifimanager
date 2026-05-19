@@ -48,7 +48,7 @@ repos:
     - id: bind-requirements
       args:
        - --python-min
-       - '3.9'
+       - '3.4'
 
  - repo: https://github.com/python-formate/flake8-dunder-all
    rev: v0.5.0

@@ -25,7 +25,7 @@ Homepage = "https://github.com/domdfcoding/circuitpython_wifimanager"
 
 [tool.whey]
 base-classifiers = []
-python-versions = [ "3.9",]
+python-versions = [ "3.4", "3.9", "3.10",]
 python-implementations = [ "CPython",]
 platforms = [ "Windows", "macOS", "Linux",]
 license-key = "MIT"
