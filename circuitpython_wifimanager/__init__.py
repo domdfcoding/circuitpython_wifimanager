@@ -46,8 +46,8 @@ module [1]_ shipped with CircuitPython.
 
 # stdlib
 import ipaddress
-import rtc  # type: ignore[import]  # nodep (CircuitPython builtin)
-import socketpool  # type: ignore[import]  # nodep (CircuitPython builtin)
+import rtc  # type: ignore[import-not-found]  # nodep (CircuitPython builtin)
+import socketpool  # type: ignore[import-not-found]  # nodep (CircuitPython builtin)
 import ssl
 import struct
 import time
@@ -55,11 +55,11 @@ from micropython import const  # nodep (CircuitPython builtin)
 from time import sleep
 
 # 3rd party
-import adafruit_requests as requests  # type: ignore[import]
+import adafruit_requests as requests  # type: ignore[import-untyped]
 
 if False:  # TYPE_CHECKING
 	# stdlib
-	import wifi  # type: ignore[import]
+	import wifi  # type: ignore[import-not-found]
 	from types import TracebackType
 	from typing import Any, Dict, NoReturn, Optional, Tuple, Type, Union
 
